@@ -9,35 +9,37 @@
 </head>
 <body>
     <div class="form">
-        <form action="">
+        <form action="form.php" method="POST">
             <table>
                 <tr>
                  
-                    <td><input type="text" placeholder="Nombre" name="nombre" class="form_input"></td>
+                    <td><input type="text" placeholder="Nombre" name="nombre" required class="form_input"></td>
                 </tr>
                 <tr>
                     
-                    <td><input type="password" placeholder="Contraseña" name="password" class="form_input"></td>
+                    <td><input type="password" placeholder="Contraseña" name="password" required class="form_input"></td>
                 </tr>
                 <tr>
                    
                     <td>
-                        <input type="radio" name="genero" class="form_radio"> Femenino
-                        <input type="radio" name="genero" class="form_radio"> Masculino
+                        <input type="radio" name="genero" value="F" required class="form_radio"> Femenino
+                        <input type="radio" name="genero" value="M" required class="form_radio"> Masculino
                     </td>
                 </tr>
                 <tr>
                     
-                    <td><input type="mail" placeholder="Correo Electrónico" name="correo" class="form_input"></td>
+                    <td><input type="mail" placeholder="Correo Electrónico" name="correo" required class="form_input"></td>
                 </tr>
                 <tr>
                     
                     <td>
-                        <select name="materia" id="" class="form_select">
-                            <option value="">Matemáticas</option>
-                            <option value="">Inglés</option>
-                            <option value="">Historia</option>
-                            <option value="">Lengua Española</option>
+                        <select name="materia" id="" required class="form_select">
+                            <option value="" selected hidden> Cursos </option>
+                            <option value="matematicas">Matemáticas</option>
+                            <option value="ingles">Inglés</option>
+                            <option value="historia">Historia</option>
+                            <option value="lengua">Lengua Española</option>
+                            <option value="biologia">Biología</option>
                         </select>
                     </td>
                 </tr>
@@ -45,7 +47,7 @@
                 <tr>
                     
                     <td>
-                        <input type="phone" placeholder="Teléfono" name="telefono" class="form_input">
+                        <input type="phone" placeholder="Teléfono" name="telefono" required class="form_input">
                     </td>
                 </tr>
                     <td>
